@@ -1,1 +1,0 @@
-# percona_haproxy_helm_chart
