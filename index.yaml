@@ -3,6 +3,16 @@ entries:
   percona-haproxy:
   - apiVersion: v2
     appVersion: 2.8.13
+    created: "2025-04-20T14:19:29.769589178Z"
+    description: A Helm chart for Kubernetes
+    digest: bbd420a3c39c11227a1b2e41e553bb28e6b79d2e199f5db55d1de49edc0c5275
+    name: percona-haproxy
+    type: application
+    urls:
+    - https://github.com/bpmb82/percona_haproxy_helm_chart/releases/download/percona-haproxy-1.0.7/percona-haproxy-1.0.7.tgz
+    version: 1.0.7
+  - apiVersion: v2
+    appVersion: 2.8.13
     created: "2025-04-20T10:05:40.441910513Z"
     description: A Helm chart for Kubernetes
     digest: 3fd562fcc0f07d54d0c689fd4add7e08efcc39ac566c6739ce9961c1bd8dd620
@@ -72,4 +82,4 @@ entries:
     urls:
     - https://github.com/bpmb82/percona_haproxy_helm_chart/releases/download/percona_haproxy-1.0.0/percona_haproxy-1.0.0.tgz
     version: 1.0.0
-generated: "2025-04-20T10:05:40.441937384Z"
+generated: "2025-04-20T14:19:29.769616619Z"
