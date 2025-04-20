@@ -1,6 +1,6 @@
-# percona_haproxy_helm_chart
+# percona-haproxy_helm_chart
 
-Helm charts to deploy [percona-haproxy](https://github.com/bpmb82/percona-haproxy)
+Helm chart to deploy [percona-haproxy](https://github.com/bpmb82/percona-haproxy)
 
 ## Usage
 
@@ -13,6 +13,8 @@ environment:
   - name: SECONDARY_SERVERS
     value: "pg1:10.0.8.20:5432,pg2:10.8.0.21:5432" # Comma separated list of <hostname>:<ip_address>:<port> for use in the standbys section.
 ```
+
+#### NOTE: the \<port> variable is optional, defaults to 5432
 
 Deploy the chart as follows:
 
@@ -36,6 +38,6 @@ spec:
   - match: "Host(`haproxy_stats.example.com`)"
     kind: Rule
     services:
-      - name: haproxy
+      - name: percona-haproxy
         port: 7000
 ```

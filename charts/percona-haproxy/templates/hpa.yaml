@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "percona_haproxy.fullname" . }}
+  name: {{ include "percona-haproxy.fullname" . }}
   labels:
-    {{- include "percona_haproxy.labels" . | nindent 4 }}
+    {{- include "percona-haproxy.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "percona_haproxy.fullname" . }}
+    name: {{ include "percona-haproxy.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
